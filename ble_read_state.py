@@ -656,6 +656,10 @@ def parse_os_wifi_code(code, dev):
         return ('Mac OS', 'On')
     elif code == '98':
         return ('WatchOS', '<unknown>')
+    elif code == '1d':
+        return ('iOS15','On')
+    elif code == '19':
+        return ('iOS15','Off')
     else:
         return (f'{code}', f'{dev}')
 
