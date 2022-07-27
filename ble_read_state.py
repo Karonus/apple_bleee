@@ -198,6 +198,19 @@ devices_models = {
     "iPhone11,4": "iPhone XS Max",
     "iPhone11,6": "iPhone XS Max Global",
     "iPhone11,8": "iPhone XR",
+    "iPhone12,1": "iPhone 11",
+    "iPhone12,3": "iPhone 11 Pro",
+    "iPhone12,5": "iPhone 11 Pro Max",
+    "iPhone12,8": "iPhone SE 2nd Gen",
+    "iPhone13,1": "iPhone 12 mini",
+    "iPhone13,2": "iPhone 12",
+    "iPhone13,3": "iPhone 12 Pro",
+    "iPhone13,4": "iPhone 12 Pro Max",
+    "iPhone14,4": "iPhone 13 mini",
+    "iPhone14,5": "iPhone 13",
+    "iPhone14,2": "iPhone 13 Pro",
+    "iPhone14,3": "iPhone 13 Pro Max",
+    "iPhone14,6": "iPhone SE 3rd Gen",
     "MacBookPro15,1": "MacBook Pro 15, 2019",
     "MacBookPro15,2": "MacBook Pro 13, 2019",
     "MacBookPro15,1": "MacBook Pro 15, 2018",
@@ -312,6 +325,8 @@ devices_models = {
 
 proximity_dev_models = {
     '0220': 'AirPods',
+    '0f20': 'AirPods Gen 2',
+    '0e20': 'AirPods Pro',
     '0320': 'Powerbeats3',
     '0520': 'BeatsX',
     '0620': 'Beats Solo3'
@@ -642,7 +657,7 @@ def parse_os_wifi_code(code, dev):
     elif code == '98':
         return ('WatchOS', '<unknown>')
     else:
-        return ('', '')
+        return (f'{code}', f'{dev}')
 
 
 def parse_ble_packet(data):
