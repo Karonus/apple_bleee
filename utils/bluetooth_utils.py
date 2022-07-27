@@ -346,7 +346,8 @@ def parse_le_advertising_events(sock, mac_addr=None, packet_length=None,
                 try:
                     handler(mac_addr_str, adv_type, data, rssi)
                 except Exception as e:
-                    print('Exception when calling handler with a BLE advertising event: %r' % (e,))
+                    # print('Exception when calling handler with a BLE advertising event: %r' % (e,))
+                    pass
 
     except KeyboardInterrupt:
         print("\nRestore previous socket filter")
