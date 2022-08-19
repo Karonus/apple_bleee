@@ -660,6 +660,8 @@ def parse_os_wifi_code(code, dev):
         return ('iOS15','On')
     elif code == '19':
         return ('iOS15','Off')
+    elif code == '1f':
+        return ('iOS16', 'On')
     else:
         return (f'{code}', f'{dev}')
 
