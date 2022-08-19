@@ -122,6 +122,7 @@ phone_states = {
     '1b': 'Home screen',
     '1c': 'Home screen',
     '23': 'Off',
+    '3a': 'Idle',
     '47': 'Lock screen',
     '4b': 'Home screen',
     '4e': 'Outgoing call',
@@ -132,6 +133,8 @@ phone_states = {
     '67': 'Lock screen',
     '6b': 'Home screen',
     '6e': 'Incoming call',
+    '7a': 'Lock screen',
+    '7b': 'Home screen',
 }
 
 airpods_states = {
